@@ -8,6 +8,7 @@ import java.util.Random;
 
 public class VirtualPet {
 
+
     private String name;
 
     private int hungerLevel;
@@ -25,9 +26,6 @@ public class VirtualPet {
     private int phone;
 
     private int life;
-
-
-
     //public int getTheLifeVariableValue() {
     //   return this.life;
     // }
@@ -37,7 +35,6 @@ public class VirtualPet {
     //    this.life = userSetsLife;
     //this makes the user able to call the user's ability to set the int and set it using rocky.setLife(4) // four being the variable set through the application
     // }
-
 
     // new VirtualPet("Rocky", 3, 5,5,5);
     public VirtualPet(String name, int hungerLevel, int urgeToSteal, int thirstLevel, int boredomLevel) {
@@ -52,19 +49,15 @@ public class VirtualPet {
         //     this.life = life;
     }
 // line 26-36 defining the way that the class is initialized
-
-    public String getname() {
+    public String getName() {
         return name;
     }
-
     public int getHungerLevel() {
         return hungerLevel;
     }
-
     public int getUrgeToSteal() {
         return urgeToSteal;
     }
-
     public int getThirstLevel() {
         return thirstLevel;
     }
@@ -72,7 +65,7 @@ public class VirtualPet {
     public int getBoredomLevel() {
         return boredomLevel;
     }
-
+    //TODO
     //TODO:
     // public int getFoodInTheFridge() {
     //    return foodInTheFridge;
@@ -86,14 +79,11 @@ public class VirtualPet {
     // public int life() {
     //     return life;
     // }
-
-
     public void greeting() {
         System.out.print("\uD83E\uDD9D" + name + "'s" + "🦝 hunger level is " + hungerLevel + ", his thirst level is " + thirstLevel);
         System.out.println(", his boredom level is " + boredomLevel + " and his urge to steal is " + urgeToSteal);
 
     }
-
     public void feed() {
         hungerLevel = -1;
         //TODO:  thirstLevel = thirstLevel +2;
@@ -116,51 +106,51 @@ public class VirtualPet {
         // TODO eventually want to do this ---> boredomLevel = new Random().nextInt(4) + 1;
         // TODO but confused about how to make the boredom level go over 5 due to user negligence not randomization
 
-        if (hungerLevel > 5) {
-            urgeToSteal++;
-        }
-        if (thirstLevel > 5) {
-            urgeToSteal++;
-        }
-        if (boredomLevel > 5) {
-            urgeToSteal++;
-        }
-        if (urgeToSteal > 9) {
-            System.out.println("You're raccoon has stolen your food, phone and keys. You are now their pet!");
-            System.out.println("                                                              _/;\n" +
-                    "                                                            _(~  ;\n" +
-                    "                                                          _(##    ;\n" +
-                    "                                    ___                 _(   ###   ;\n" +
-                    "                           __,-----'   `--.__         _( ##    ### ;\n" +
-                    "               ,-.   _,---'  ,-,      ,      `---.   (##  ###    ###\n" +
-                    "              //\\\\ -'       //~\\\\   , `           `--. ##   ###   #;\n" +
-                    "            ,'/\"\"\\`,--'~~`-'/ \"\";;  `                 `-.##   ###  ;\n" +
-                    "            (( \"__;;  ,.,.,   ~~ ; ,                  ,  `.##   ##;\n" +
-                    "            ; '~_,-.      _,-'~~`-.`        ;         `,  ; ##   ;\n" +
-                    " *(*)      ;_.-'  _ `.   ;   _    `.     - `          ,`  ;  ## ;\n" +
-                    " ***     ;;   _,-'::-.: | ,-'::-._,|       _`         `   ; _,-'\n" +
-                    " \\/ +   ; ;,-:::(0)::\\; :/(0):::::::      '               |;\n" +
-                    " ---   ;  `.:::::,-'~)   (`-.::--.:;     '           ,    : --  ----\n" +
-                    "      ;    :~`-'~     \\__\\   ~~  ~.'    ;            `   ;\n" +
-                    "     ;      `-._    . (~..) `;_,-'      ;               ;    *\n" +
-                    "     .         ;`-`._ .`--'_;           ;           _,-'   *[o]*\n" +
-                    "     ;     ;  ; `-.  `--'`-'  ;        ;\\       _,-'         !\n" +
-                    "     (    ;  ;     `-.____,--;     ;  _; `-,___(_     \\?/\n" +
-                    "      \\      `-,_     ~~~~  ;       ;;    /    __}\n" +
-                    "       `._       `-.      ,-'    ; _,' ,-',,,-'\n" +
-                    " @@@@@@@  `--,~~~~~ ;    ;     _,-'    C^c^c           @@@@@@@@@\n" +
-                    " ~~~~~~~~~__ ))(_)()\\ ___)~~~~( ____         @@@@@@@@@@@@@@@/~~~~~~~\n" +
-                    "      ,-'oo //:; :; ); o ))))))) oooo-.~~~~~~~~~~~~~~~~~~~~~\n" +
-                    "     { ooo  ()() () () o ()()()() ooooo}                     -\n" +
-                    "      `-.oo ~ ~  ~  ~ oo ~ ~ ~ ~ ooo,-'     ~~~~~      ~~~\n" +
-                    "          `-------------------------\n" +
-                    "   ~~~~                  ~~~~~               ~~~~~~~   __    ~~\n" +
-                    "\n" +
-                    "      ~~~~~~                         ~~               ~~\n" +
-                    " -------------------------------------------------------------------");
-            System.exit(0);
-
-        }
+//       TODO if (hungerLevel > 5) {
+//            urgeToSteal++;
+//        }
+//        if (thirstLevel > 5) {
+//            urgeToSteal++;
+//        }
+//        if (boredomLevel > 5) {
+//            urgeToSteal++;
+//        }
+//        if (urgeToSteal > 9) {
+//            System.out.println("You're raccoon has stolen your food, phone and keys. You are now their pet!");
+//            System.out.println("                                                              _/;\n" +
+//                    "                                                            _(~  ;\n" +
+//                    "                                                          _(##    ;\n" +
+//                    "                                    ___                 _(   ###   ;\n" +
+//                    "                           __,-----'   `--.__         _( ##    ### ;\n" +
+//                    "               ,-.   _,---'  ,-,      ,      `---.   (##  ###    ###\n" +
+//                    "              //\\\\ -'       //~\\\\   , `           `--. ##   ###   #;\n" +
+//                    "            ,'/\"\"\\`,--'~~`-'/ \"\";;  `                 `-.##   ###  ;\n" +
+//                    "            (( \"__;;  ,.,.,   ~~ ; ,                  ,  `.##   ##;\n" +
+//                    "            ; '~_,-.      _,-'~~`-.`        ;         `,  ; ##   ;\n" +
+//                    " *(*)      ;_.-'  _ `.   ;   _    `.     - `          ,`  ;  ## ;\n" +
+//                    " ***     ;;   _,-'::-.: | ,-'::-._,|       _`         `   ; _,-'\n" +
+//                    " \\/ +   ; ;,-:::(0)::\\; :/(0):::::::      '               |;\n" +
+//                    " ---   ;  `.:::::,-'~)   (`-.::--.:;     '           ,    : --  ----\n" +
+//                    "      ;    :~`-'~     \\__\\   ~~  ~.'    ;            `   ;\n" +
+//                    "     ;      `-._    . (~..) `;_,-'      ;               ;    *\n" +
+//                    "     .         ;`-`._ .`--'_;           ;           _,-'   *[o]*\n" +
+//                    "     ;     ;  ; `-.  `--'`-'  ;        ;\\       _,-'         !\n" +
+//                    "     (    ;  ;     `-.____,--;     ;  _; `-,___(_     \\?/\n" +
+//                    "      \\      `-,_     ~~~~  ;       ;;    /    __}\n" +
+//                    "       `._       `-.      ,-'    ; _,' ,-',,,-'\n" +
+//                    " @@@@@@@  `--,~~~~~ ;    ;     _,-'    C^c^c           @@@@@@@@@\n" +
+//                    " ~~~~~~~~~__ ))(_)()\\ ___)~~~~( ____         @@@@@@@@@@@@@@@/~~~~~~~\n" +
+//                    "      ,-'oo //:; :; ); o ))))))) oooo-.~~~~~~~~~~~~~~~~~~~~~\n" +
+//                    "     { ooo  ()() () () o ()()()() ooooo}                     -\n" +
+//                    "      `-.oo ~ ~  ~  ~ oo ~ ~ ~ ~ ooo,-'     ~~~~~      ~~~\n" +
+//                    "          `-------------------------\n" +
+//                    "   ~~~~                  ~~~~~               ~~~~~~~   __    ~~\n" +
+//                    "\n" +
+//                    "      ~~~~~~                         ~~               ~~\n" +
+//                    " -------------------------------------------------------------------");
+//            System.exit(0);
+//
+//        }
     }
 }
 
