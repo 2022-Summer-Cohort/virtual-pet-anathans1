@@ -1,12 +1,7 @@
-package virtual_pet;
+package OriginalVirtualPetRaccoon;
 
-import org.w3c.dom.ls.LSOutput;
+public class Raccoon {
 
-import java.time.Clock;
-import java.time.Duration;
-import java.util.Random;
-
-public class VirtualPet {
 
 
     private String name;
@@ -37,7 +32,7 @@ public class VirtualPet {
     // }
 
     // new VirtualPet("Rocky", 3, 5,5,5);
-    public VirtualPet(String name, int hungerLevel, int urgeToSteal, int thirstLevel, int boredomLevel) {
+    public Raccoon(String name, int hungerLevel, int urgeToSteal, int thirstLevel, int boredomLevel) {
         this.name = name;
         this.hungerLevel = hungerLevel;
         this.urgeToSteal = urgeToSteal;
@@ -48,7 +43,7 @@ public class VirtualPet {
         //     this.phone = phone;
         //     this.life = life;
     }
-// line 26-36 defining the way that the class is initialized
+    // line 26-36 defining the way that the class is initialized
     public String getName() {
         return name;
     }
@@ -154,7 +149,7 @@ public class VirtualPet {
     }
 }
 
-        // TODO:
+// TODO:
        /*
         // TODO: if (foodInTheFridge == 0) {
             System.out.println("Your racoons raided your fridge. You now have no food!");
