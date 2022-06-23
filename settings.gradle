@@ -1,0 +1,3 @@
+include 'src:test:OldTests'
+findProject(':src:test:OldTests')?.name = 'OldTests'
+
